@@ -3,7 +3,8 @@
 const Home = () => {
 
   return (
-    <div className="snap-proximity snap-y snap-always snap-center  bg-[url('../src/assets/hero-bg.jpg')] flex flex-col h-screen max-h-screen ">
+    <div className="snap-mandatory snap-y snap-always snap-center  bg-[url('../src/assets/hero-bg.jpg')] flex flex-col h-screen overflow-y-scroll">
+      <div className="snap-start">
       <div className="flex flex-col w-full h-full container mx-auto justify-center items-center">
         <div className="flex flex-col justify-center items-center gap-2">
           <h1 className="animate-jumpFromTop inline text-white text-4xl drop-shadow-lg">Hi, I am <strong>Gokul</strong>.</h1>
@@ -18,6 +19,7 @@ const Home = () => {
             className="h-8 object-contain"
           />
           </a>
+      </div>
       </div>
     </div>
   )

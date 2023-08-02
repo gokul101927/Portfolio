@@ -3,8 +3,9 @@ import SkillsCarousel from "../components/SkillsCarousel";
 
 const About = () => {
   return (
-    <div id='about' className="snap-proximity	snap-y snap-always snap-center h-full w-full container mx-auto h-screen overflow-hidden">
-      <Header />
+    <div id='about' className="snap-mandatory	snap-y snap-always snap-center h-full w-full container mx-auto h-screen overflow-y-scroll">
+      {/* <Header /> */}
+      <div className="snap-start">
       <div className="container h-full md:h-2/3 mt-0 py-8 md:mt-8 flex flex-col justify-start md:justify-center ">
         <div className="px-8 animate-jumpFromTop">
           <h1 className="text-2xl md:text-5xl font-bold text-primaryRed">About me</h1>
@@ -32,6 +33,8 @@ const About = () => {
           <SkillsCarousel />
         </div>
       </div>
+      </div>
+      
     </div>
   );
 };
