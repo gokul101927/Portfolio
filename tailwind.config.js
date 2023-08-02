@@ -24,6 +24,7 @@ export default {
         jumpFromTop: 'jumpFromTop 1s forwards',
         jumpFromBottom: 'jumpFromBottom 2s forwards',
         out: 'out 5s ease-in-out',
+        jumpInfinite: 'jumpInfinite 1.5s infinite',
       },
       keyframes: {
         fadeIn: {
@@ -45,8 +46,8 @@ export default {
             transform: 'translateY(0)',
             opacity: '0',
           },
-          '30%': {
-            transform: 'translateY(-80%);',
+          '50%': {
+            transform: 'translateY(-50%);',
             opacity: '0',
           },
           '100%': {
@@ -77,6 +78,17 @@ export default {
           },
           '100%': {
             opacity: '1'
+          }
+        },
+        jumpInfinite: {
+          '0%': {
+            paddingBottom: '0',
+          },
+          '50%': {
+            paddingBottom: '20px'
+          },
+          '100%': {
+            paddingBottom: '0'
           }
         },
       },

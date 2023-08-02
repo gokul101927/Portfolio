@@ -1,15 +1,10 @@
-import Header from "../components/Header";
-import { Page } from "../types/interface";
+import Header from "../components/Header";  
 import SkillsCarousel from "../components/SkillsCarousel";
 
-interface Props {
-  handlePageChange: (page: Page) => void;
-}
-
-const About: React.FC<Props> = ({ handlePageChange }) => {
+const About = () => {
   return (
-    <div className="h-full w-full container mx-auto h-screen max-h-screen overflow-hidden">
-      <Header handlePageChange={handlePageChange} />
+    <div id='about' className="snap-proximity	snap-y snap-always snap-center h-full w-full container mx-auto h-screen overflow-hidden">
+      <Header />
       <div className="container h-full md:h-2/3 mt-0 py-8 md:mt-8 flex flex-col justify-start md:justify-center ">
         <div className="px-8 animate-jumpFromTop">
           <h1 className="text-2xl md:text-5xl font-bold text-primaryRed">About me</h1>
@@ -31,17 +26,6 @@ const About: React.FC<Props> = ({ handlePageChange }) => {
             implementing eye pleasing designs and making them come to life with
             animation is what I do best.
           </h6>
-          <div>
-            <button
-              type="button"
-              onClick={() => handlePageChange(Page.Projects)}
-              className="border text-base md:text-lg border-2 border-primaryRed p-2 font-bold rounded-md transition bg-primaryRed 
-              
-              "
-              >
-              Wanna see my projects?
-            </button>
-          </div>
         </div>
 
         <div className="animate-jumpFromBottom">

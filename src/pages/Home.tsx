@@ -1,20 +1,24 @@
-import { Page } from "../types/interface"
 
-interface Props {
-    handlePageChange: (page: Page) => void;
-}
 
-const Home:React.FC<Props> = ({handlePageChange}) => {
+const Home = () => {
 
   return (
-    <div className="container mx-auto h-full w-full flex flex-col items-center justify-center text-center space-y-2 h-screen max-h-screen overflow-hidden">
-        <div className="text-4xl flex gap-2">
-          <h1 className="animate-[jumpFromTop_1s_forwards]">Hey there,</h1>
-          <h1 className="animate-[jumpFromTop_1.5s_forwards]">I'm</h1>  
-          <h1 className="animate-[jumpFromTop_2s_forwards] text-primaryRed">Gokul<span className="text-white">.</span></h1>  
+    <div className="snap-proximity snap-y snap-always snap-center  bg-[url('../src/assets/hero-bg.jpg')] flex flex-col h-screen max-h-screen ">
+      <div className="flex flex-col w-full h-full container mx-auto justify-center items-center">
+        <div className="flex flex-col justify-center items-center gap-2">
+          <h1 className="animate-jumpFromTop inline text-white text-4xl drop-shadow-lg">Hi, I am <strong>Gokul</strong>.</h1>
+          <h4 className="animate-[jumpFromTop_1.5s_forwards] inline text-white text-xl">An aspiring full stack developer.</h4>
         </div>
-        <h4 className="text-3xl animate-jumpFromBottom">An aspiring full stack web developer.</h4>
-        <button type="button" onClick={() => handlePageChange(Page.About)} className="animate-fadeIn border border-2 border-primaryRed p-2 font-bold rounded-md transition hover:bg-primaryRed">Get to know me</button>
+      </div>
+      <div className="animate-jumpInfinite w-20 h-20 flex flex-col py-12 mb-12 container mx-auto justify-center items-center opacity-50 cursor-pointer">
+          <a href="#about">
+          <img
+            src="../src/assets/down-arrow.png"
+            alt="down arrow"
+            className="h-8 object-contain"
+          />
+          </a>
+      </div>
     </div>
   )
 }
