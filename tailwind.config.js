@@ -10,7 +10,6 @@ export default {
       md: '700px',
       lg: '976px',
       xl: '1200px',
-      
     },
     extend: {
       colors: {
@@ -19,6 +18,7 @@ export default {
         primaryRed: '#d24141',
         shadowGreen: '#008080',
       },
+      
       animation: {
         fadeIn: 'fadeIn 3s forwards',
         jumpFromTop: 'jumpFromTop 1s forwards',

@@ -6,7 +6,7 @@ import Home from './pages/Home'
 function App() {
 
   return (
-    <div className="overflow-hidden">
+    <div>
      <Home />
      <About />
     </div>
