@@ -5,7 +5,6 @@ import { useCallback } from 'react';
 interface SkillProps {
   name: string;
   icon: string;
-  index: number;
 }
 
 const skills = [
@@ -49,12 +48,11 @@ const SkillsCarousel = () => {
     <div className='relative ps-10 pe-10 mx-10'>
       <div className="overflow-hidden w-full mx-auto" ref={emblaRef}>
         <div className="flex gap-4 -ml-2.5 select-none cursor-grab active:cursor-grabbing">
-          {skills.map((skill, index) => (
+          {skills.map((skill) => (
             <Skill
               key={skill.name}
               name={skill.name}
               icon={skill.icon}
-              index={index}
             />
           ))}
         </div>

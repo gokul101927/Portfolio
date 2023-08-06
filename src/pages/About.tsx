@@ -1,16 +1,14 @@
-import AnimateIn from "../components/AnimateIn";
+
 import SkillsCarousel from "../components/SkillsCarousel";
 
 const About = () => {
   return (
-    <div id='about' className="animate-fadeIn snap-mandatory snap-start snap-y snap-always snap-center overflow-y-scrollflex w-full container mx-auto h-screen">
-      {/* <Header /> */}
-      <AnimateIn>
-        <div className="snap-start container h-full md:h-2/3 mt-0 py-8 md:mt-8 flex flex-col justify-start md:justify-center ">
-          <div className="px-8 ">
-            <h1 className="text-2xl md:text-5xl font-bold text-white">About me</h1>
+    <div id='about' className="flex justify-center items-center animate-fadeIn bg-bgPrimary snap-mandatory snap-start snap-y snap-always snap-center overflow-y-scrollflex w-full h-screen">
+        <div className="snap-start container mx-auto h-full md:h-2/3 mt-0 py-8 md:mt-8 flex flex-col justify-start md:justify-center gap-8">
+          <div className="px-8">
+            <h1 className="text-2xl uppercase pb-2 inline font-bold text-primary">About me</h1>
           </div>
-          <div className="p-8 space-y-4">
+          <div className="px-8 py-2 space-y-4">
             <h6 className="text-base md:text-xl">
               Hi there! I'm Gokul, an aspiring full stack developer.{" "}
               <span className="text-xs md:text-sm italic">
@@ -28,11 +26,10 @@ const About = () => {
               animation is what I do best.
             </h6>
           </div>
-          <div className="snap-start">
+          <div className="snap-start pt-4">
             <SkillsCarousel />
           </div>
         </div>
-      </AnimateIn>
     </div>
 
   );

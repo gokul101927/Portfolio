@@ -12,19 +12,17 @@ export default {
       xl: '1200px',
     },
     extend: {
-      colors: {
-        bgColor: '#1a1a2d',
-        primaryWhite: '#ffffff',
-        primaryRed: '#d24141',
-        shadowGreen: '#008080',
+      colors: { 
+        primary: '#681aff',
+        bgPrimary: '#242424'
       },
-      
       animation: {
         fadeIn: 'fadeIn 3s forwards',
         jumpFromTop: 'jumpFromTop 1s forwards',
         jumpFromBottom: 'jumpFromBottom 2s forwards',
         out: 'out 5s ease-in-out',
         jumpInfinite: 'jumpInfinite 1.5s infinite',
+        shine: 'shine 5s infinite',
       },
       keyframes: {
         fadeIn: {
@@ -91,6 +89,21 @@ export default {
             paddingBottom: '0'
           }
         },
+        shine: {
+          '0%': {
+            backgroundPosition: '-1000px',
+          },
+          '20%': {
+            backgroundPositionn: 'top left',
+          },
+          '90%': {
+            backgroundPosition: 'top right',
+          },
+          '100%': {
+            backgroundPosition: '1000px'
+          }
+        },
+       
       },
     },
   },
