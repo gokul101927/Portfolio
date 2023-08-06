@@ -1,17 +1,16 @@
 import './App.css'
 import About from './pages/About'
 import Home from './pages/Home'
-import Particless from './pages/Particless'
+import Projects from './pages/Projects'
 
 
 function App() {
 
   return (
     <div>
-    <Particless/>
      <Home />
-     {/* <Header/> */}
      <About />
+     <Projects />
     </div>
   )
 }
