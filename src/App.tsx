@@ -1,18 +1,18 @@
-import './App.css'
-import About from './pages/About'
-import Home from './pages/Home'
-import Projects from './pages/Projects'
+import './App.css'; // Include your Tailwind CSS styles
+import About from './pages/About';
+import Home from './pages/Home';
 
 
 function App() {
 
+
   return (
-    <div>
-     <Home />
-     <About />
-     <Projects />
-    </div>
-  )
+    <>
+      <Home />
+      <About/>
+    </>
+    
+  );
 }
 
-export default App
+export default App;
