@@ -1,6 +1,7 @@
-import './App.css'; // Include your Tailwind CSS styles
+import './App.css';
 import About from './pages/About';
 import Home from './pages/Home';
+import Projects from './pages/Projects';
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <>
       <Home />
       <About/>
+      <Projects/>
     </>
     
   );

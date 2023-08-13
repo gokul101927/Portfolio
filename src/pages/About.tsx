@@ -3,8 +3,8 @@ import SkillsCarousel from "../components/SkillsCarousel";
 
 const About = () => {
   return (
-    <div id='about' className="flex justify-center items-center animate-fadeIn flex w-full">
-        <div className="container bg-black mx-auto h-full md:h-2/3 mt-0 py-8 md:mt-8 flex flex-col justify-start md:justify-center gap-8">
+    <article id='about' className="flex bg-black justify-center items-center animate-fadeIn flex w-full">
+        <div className="container  mx-auto h-full md:h-2/3 mt-0 py-8 md:mt-8 flex flex-col justify-start md:justify-center gap-8">
           <div className="px-8">
             <h1 className="text-2xl uppercase pb-2 inline font-bold text-primary">About me</h1>
           </div>
@@ -30,7 +30,7 @@ const About = () => {
             <SkillsCarousel />
           </div>
         </div>
-    </div>
+    </article>
 
   );
 };
