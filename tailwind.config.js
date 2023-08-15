@@ -9,12 +9,17 @@ export default {
       sm: '480px',
       md: '700px',
       lg: '976px',
-      xl: '1200px',
+      xl: '1140px',
+    },
+    fontFamily: {
+      poppins: ["Poppins", "sans-serif"],
+      dancingScript: ["Dancing Script", "cursive"],
     },
     extend: {
       colors: { 
         primary: '#681aff',
-        bgPrimary: '#242424'
+        bgPrimary: '#242424',
+        textColor: 'rgb(198, 198, 198)'
       },
       animation: {
         fadeIn: 'fadeIn 3s forwards',
@@ -80,13 +85,13 @@ export default {
         },
         jumpInfinite: {
           '0%': {
-            paddingBottom: '0',
+            marginLeft: '0',
           },
           '50%': {
-            paddingBottom: '20px'
+            marginLeft: '10px'
           },
           '100%': {
-            paddingBottom: '0'
+            marginLeft: '0'
           }
         },
         shine: {

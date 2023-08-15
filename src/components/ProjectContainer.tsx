@@ -1,35 +1,20 @@
-import Laptop from "./Laptop";
+import { Link } from "react-router-dom"
 
-interface Props {
-  src: string;
-  title: string;
-  description: string;
-  github: string;
-  live: string;
+const ProjectContainer = () => {
+  return (
+    <div className='rounded-md relative object-cover w-[450px] h-[400px] bg-center bg-no-repeat overflow-hidden p-4 flex items-end'>
+        <img src='https://www.codewonders.dev/_next/image?url=https%3A%2F%2Fi.ibb.co%2FtCZFDhL%2FScreen-Recording-2020-06-11-at-1.gif&w=1080&q=75' className='absolute object-cover w-full h-full left-0 top-0'/>
+        <div className='z-50 transition-opacity opacity-0 hover:opacity-100 pb-16 space-y-2'>
+            <h1 className='inline font-bold uppercase text-xl text-white'>Comentario</h1>
+            <p className="text-white">An online software feedback webapp with sentiment analysis.</p>
+            <div className="flex gap-4">
+                <Link to='#' className="rounded-full bg-gray-400 px-4 py-1 text-white text-xs font-bold">Github</Link>
+                <Link to='#' className="rounded-full bg-gray-400 px-4 py-1 text-white text-xs font-bold">Live</Link>
+            </div>
+        </div>
+       
+    </div>
+  )
 }
 
-const ProjectContainer:React.FC<Props> = ({src, title, description, live, github}) => {
-  return (
-    <article className='project'>
-      <div className="flex justify-center items-center">
-        <div className="flex w-1/2">
-          <Laptop src={src}/>
-        </div>
-        <div>
-          <div>
-          <h1 className="text-white text-4xl">{title}</h1>
-          <h4 className="text-white text-xl">{description}</h4>
-          </div>
-          <div>
-            <a href={live} >Live</a>
-            <a href={github} >Github</a>
-          </div>
-          
-        </div>
-        
-      </div>
-    </article>
-  );
-};
-
-export default ProjectContainer;
+export default ProjectContainer

@@ -1,18 +1,30 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import About from './pages/About';
 import Home from './pages/Home';
-import Projects from './pages/Projects';
+import ScrollToTop from './components/ScrollToTop';
+import Layout from './Layout';
+import Header from './components/Header';
+import Projects from './pages/projects';
+import Footer from './components/Footer';
 
 
 function App() {
 
 
   return (
-    <>
-      <Home />
-      <About/>
-      <Projects/>
-    </>
+    <div className="App min-h-screen">
+      <BrowserRouter >
+      <ScrollToTop/>
+      <Header/>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+          </Route>
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
+    </div>
     
   );
 }

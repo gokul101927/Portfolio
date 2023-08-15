@@ -1,14 +1,31 @@
-import ProjectContainer from '../components/ProjectContainer';
+import { Link } from 'react-router-dom'
+import ProjectContainer from '../components/ProjectContainer'
 
 const Projects = () => {
-  return (
-    <section id='about' className="flex bg-black justify-center items-center animate-fadeIn flex w-full">
-    <div className="container mx-auto h-full md:h-2/3 mt-0 py-8 md:mt-8 flex flex-col justify-start md:justify-center gap-8">
-      <ProjectContainer/>
-    </div>
-     
-    </section>
-  );
-};
+    return (
+        <section >
+            <div className='container mx-auto px-4 lg:px-24 pt-4 lg:pt-12 h-fit'>
+                <div>
+                    <div className='font-bold text-2xl md:text-5xl'>
+                        Projects.
+                    </div>
+                    <div className='flex justify-between flex-wrap py-12'>
+                        <div>
+                            <ProjectContainer />
+                        </div>
 
-export default Projects;
+                    </div>
+                </div>
+
+                <Link className="pt-4 flex items-center gap-2" to='/projects'>
+                    <h6 className="font-bold text-sm md:text-base">Are you interested to contact me?</h6>
+                    <img src="../src/assets/right-arrow.png" className="h-6 w-6 animate-jumpInfinite"></img>
+                </Link>
+
+            </div>
+
+        </section>
+    )
+}
+
+export default Projects

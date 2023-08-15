@@ -45,7 +45,7 @@ const SkillsCarousel = () => {
   }, [emblaApi]);
 
   return (
-    <div className='relative ps-10 pe-10 mx-10'>
+    <div className='relative ps-10 pe-10'>
       <div className="overflow-hidden w-full mx-auto" ref={emblaRef}>
         <div className="flex gap-4 -ml-2.5 select-none cursor-grab active:cursor-grabbing">
           {skills.map((skill) => (
