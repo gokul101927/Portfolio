@@ -3,16 +3,20 @@ import ProjectContainer from '../components/ProjectContainer'
 
 const Projects = () => {
     return (
-        <section >
-            <div className='container mx-auto px-4 lg:px-24 pt-4 lg:pt-12 h-fit'>
+        <section>
+            <div className='container mx-auto px-4 lg:px-24 pt-4 lg:pt-12 h-fit '>
                 <div>
                     <div className='font-bold text-2xl md:text-5xl'>
                         Projects.
                     </div>
-                    <div className='flex justify-between flex-wrap py-12'>
+                    <div className='flex flex-col xl:flex-row justify-between items-center gap-8 flex-wrap py-8'>
                         <div>
                             <ProjectContainer />
                         </div>
+                        <div>
+                            <ProjectContainer />
+                        </div>
+                        
 
                     </div>
                 </div>

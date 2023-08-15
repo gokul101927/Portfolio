@@ -12,7 +12,7 @@ function App() {
 
 
   return (
-    <div className="App min-h-screen">
+    <div className="App min-h-screen flex flex-col justify-between">
       <BrowserRouter >
       <ScrollToTop/>
       <Header/>

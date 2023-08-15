@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <section >
             <div className='container mx-auto px-4 lg:px-24 pt-4 lg:pt-12 h-fit md:min-h-[61vh]'>
-                <div className='flex flex-col justify-center text-left w-full space-y-4'>
+                <div className='flex flex-col justify-center h-full text-left w-full space-y-4'>
                     <p className="mt-8 mb-4 glitch text-2xl md:text-5xl break-normal font-bold uppercase relative tracking-[10px]">
                         <span aria-hidden="true">Hi there! I'm Gokul.</span>
                         Hi there! I'm Gokul.
