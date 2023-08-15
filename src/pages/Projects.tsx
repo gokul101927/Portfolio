@@ -16,8 +16,9 @@ const Projects = () => {
                         <div>
                             <ProjectContainer />
                         </div>
-                        
-
+                        <div>
+                            <ProjectContainer />
+                        </div>
                     </div>
                 </div>
 

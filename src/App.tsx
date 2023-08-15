@@ -4,8 +4,8 @@ import Home from './pages/Home';
 import ScrollToTop from './components/ScrollToTop';
 import Layout from './Layout';
 import Header from './components/Header';
-import Projects from './pages/projects';
 import Footer from './components/Footer';
+import Projects from './pages/Projects';
 
 
 function App() {
