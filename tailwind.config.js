@@ -17,7 +17,7 @@ export default {
     },
     extend: {
       colors: { 
-        primary: '#681aff',
+        primary: '#071b36',
         bgPrimary: '#242424',
         textColor: 'rgb(198, 198, 198)'
       },
@@ -27,9 +27,18 @@ export default {
         jumpFromBottom: 'jumpFromBottom 2s forwards',
         out: 'out 5s ease-in-out',
         jumpInfinite: 'jumpInfinite 1.5s infinite',
-        shine: 'shine 5s infinite',
+        shine: 'shine 1s',
+        meteorEffect: "meteor 5s linear infinite",
       },
       keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
+          "70%": { opacity: 1 },
+          "100%": {
+            transform: "rotate(215deg) translateX(-1100px)",
+            opacity: 0,
+          },
+        },
         fadeIn: {
           '0%': {
             transform: 'translateX(0)',
@@ -95,20 +104,8 @@ export default {
           }
         },
         shine: {
-          '0%': {
-            backgroundPosition: '-1000px',
-          },
-          '20%': {
-            backgroundPositionn: 'top left',
-          },
-          '90%': {
-            backgroundPosition: 'top right',
-          },
-          '100%': {
-            backgroundPosition: '1000px'
-          }
+          "100%": { left: "125%" },
         },
-       
       },
     },
   },

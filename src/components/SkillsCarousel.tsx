@@ -45,7 +45,7 @@ const SkillsCarousel = () => {
   }, [emblaApi]);
 
   return (
-    <div className='relative ps-10 pe-10'>
+    <div className='relative  pe-10'>
       <div className="overflow-hidden w-full mx-auto" ref={emblaRef}>
         <div className="flex gap-4 -ml-2.5 select-none cursor-grab active:cursor-grabbing">
           {skills.map((skill) => (
@@ -57,7 +57,7 @@ const SkillsCarousel = () => {
           ))}
         </div>
       </div>
-      <button onClick={scrollPrev} className='center h-8 w-8 text-current absolute left-0 top-1/2 z-2 bg-transparent text-2xl transform -translate-y-1/2 rounded-full p-0.25 border-none'>
+      <button onClick={scrollPrev} className='hidden center h-8 w-8 text-current absolute left-0 top-1/2 z-2 bg-transparent text-2xl transform -translate-y-1/2 rounded-full p-0.25 border-none'>
         <svg
           className='w-1/2 h-1/2 text-current'
           viewBox='137.718 -1.001 366.563 644'>
@@ -67,7 +67,7 @@ const SkillsCarousel = () => {
           />
         </svg>
       </button>
-      <button onClick={scrollNext} className='center flex justify-end items-center mr-0 ml-auto h-8 w-8 text-current absolute right-0 left-auto pr-0 top-1/2 z-2 bg-transparent text-2xl transform -translate-y-1/2 rounded-full p-0.25 border-none'>
+      <button onClick={scrollNext} className='hidden center flex justify-end items-center mr-0 ml-auto h-8 w-8 text-current absolute right-0 left-auto pr-0 top-1/2 z-2 bg-transparent text-2xl transform -translate-y-1/2 rounded-full p-0.25 border-none'>
         <svg
           className='w-1/2 h-1/2 text-current'
           viewBox='0 0 238.003 238.003'>

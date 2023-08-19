@@ -4,7 +4,6 @@
 
 :root {
   font-family: Poppins, sans-serif, Helvetica, Arial;
-  line-height: 1.5;
   font-weight: 400;
   letter-spacing: 0.8px;
   margin: 0;
@@ -14,7 +13,6 @@
   color-scheme: light dark;
   color: rgba(198, 198, 198);
   background: #020a13;  /* fallback for old browsers */
-  /* background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, rgb(11, 132, 145) 91.1%);   */
   background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, #071b36  91.1%); 
   scroll-behavior: smooth;
   scrollbar-width: none;
@@ -24,6 +22,10 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.primary-background {
+  background: linear-gradient(109.6deg, rgb(0, 0, 0) 11.2%, #071b36  91.1%); 
 }
 
 /* background: -webkit-linear-gradient(to right, #020a13, #302b63, #0f0c29);   Chrome 10-25, Safari 5.1-6 */
