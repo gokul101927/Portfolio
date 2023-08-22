@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 interface Props {
   title: string;
   description: string;
-  isWork: boolean;
+  isWork: boolean | undefined;
 }
 
 const Timeline: React.FC<Props> = ({ title, description, isWork }) => {

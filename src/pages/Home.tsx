@@ -19,14 +19,11 @@ const Home = () => {
                         </p>
                         <div className="space-y-6 ">
                             <p className="text-sm leading-loose">
-                                An aspiring Full Stack Web Developer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et purus
-                                augue. Donec vel magna rutrum, viverra ipsum in, pharetra neque.
-                                Nulla facilisi. Nullam congue egestas hendrerit.
+                                a diligent software tester with a fervent desire to delve into the realm of <strong>development</strong>.
+                                I'm now poised to transition and contribute uniquely innovative solutions to the tech landscape. 
                             </p>
                             <p className="text-sm leading-loose">
-                                Today I'm enthralled by web development. Creating new experiences,
-                                implementing eye pleasing designs and making them come to life with
-                                animation is what I do best.
+                                Join me as I embrace challenges, pursue growth, and craft a path towards a dynamic career at the intersection of testing and development.
                             </p>
                         </div>
                         <div>
