@@ -8,21 +8,21 @@ const projects = [
         "description": "An online software feedback webapp with sentiment analysis.",
         "live": "#",
         "gihub": "https://github.com/",
-        "src": "../src/assets/comentario.gif"
+        "src": "../src/assets/comentario.mp4"
     },
     {
         "title": "Audiophile",
         "description": "An online shopping web app for audio enthusisasts.",
         "live": "#",
         "gihub": "https://github.com/",
-        "src": "../src/assets/audiophile.gif"
+        "src": "../src/assets/audiophile.mp4"
     },
     {
         "title": "Resumes",
         "description": "An online Resume builder.",
         "live": "#",
         "gihub": "https://github.com/",
-        "src": "../src/assets/resumes.gif"
+        "src": "../src/assets/resumes.mp4"
     },
 ]
 

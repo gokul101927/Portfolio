@@ -19,10 +19,9 @@ const Header = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeIn", duration: 2 }}>
-            <header className='container sticky top-0 mx-auto h-16 py-16 px-4 flex justify-between items-center'>
-
+            <header className='container sticky top-0 mx-auto h-16 py-16 px-4 flex justify-between items-center z-50'>
                 <div id='logo'>
-                    <Link to='/' className='text-6xl font-dancingScript'>
+                    <Link to='/' className='text-6xl drop-shadow-lg font-dancingScript'>
                        G
                     </Link>
                 </div>
@@ -43,7 +42,7 @@ const Header = () => {
                         <div className="w-8 h-0.5 bg-gray-500"></div>
                         <div className="w-8 h-0.5 bg-gray-500"></div>
                     </div>
-                    <div className={`${isHeaderClicked ? 'block' : 'hidden'} overflow-y-hidden fixed inset-0 h-screen max-h-screen primary-background w-screen top-0 left-0 z-50 `}>
+                    <div className={`${isHeaderClicked ? 'block' : 'hidden'} overflow-y-hidden fixed inset-0 h-screen primary-background w-screen top-0 left-0 z-50 `}>
                         <div className='flex justify-between items-center p-4 pt-8' >
                             <div id='logo' onClick={closeNavBar}>
                                 <Link to='/' className='text-6xl font-dancingScript'>G</Link>
