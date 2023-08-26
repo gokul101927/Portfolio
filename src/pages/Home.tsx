@@ -19,11 +19,11 @@ const Home = () => {
                         </p>
                         <div className="space-y-6 ">
                             <p className="text-sm leading-loose">
-                                a diligent software tester with a fervent desire to delve into the realm of <strong>development</strong>.
+                                a diligent software tester with a fervent desire to delve into the realm of <Link to='/projects' className="underline underline-offset-4">development</Link>.
                                 I'm now poised to transition and contribute uniquely innovative solutions to the tech landscape. 
                             </p>
                             <p className="text-sm leading-loose">
-                                Join me as I embrace challenges, pursue growth, and craft a path towards a dynamic career at the intersection of testing and development.
+                                <Link to='/contact' className="underline underline-offset-4">Join</Link> me as I embrace challenges, pursue growth, and craft a path towards a dynamic career at the intersection of testing and development.
                             </p>
                         </div>
                         <div>
