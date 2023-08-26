@@ -1,14 +1,25 @@
 import { motion } from "framer-motion"
-import { useState } from "react"
+import { useRef, useState } from "react"
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [hideMessage, showEmailMessage] = useState(true);
+    const [emailMessage, setEmailMessage] = useState("Email check");
+    const form = useRef();
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-  
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        .then(() => {
+            showEmailMessage(false);
+            setEmailMessage("Thanks for contacting us. We'll get back to you as soon as possible.")
+        }, () => {
+            showEmailMessage(false);
+            setEmailMessage("Unable to sen email, please try again.")
+        });
     };
 
     return (
@@ -24,8 +35,12 @@ const Contact = () => {
                         </div>
                         <div className="space-y-6">
                             <h1>Get in touch or shoot me an email directly on 
-                                <a href="mailto:iamgokull10@gmail.com" className="font-bold"> iamgokull10@gmail.com</a></h1>
-                            <form className="space-y-8" onSubmit={handleSubmit}>
+                                <a href="mailto:iamgokull10@gmail.com" className="font-bold"> iamgokull10@gmail.com</a>
+                            </h1>
+                            {hideMessage && <div className="bg-green-700 border border-green-800 inline-flex md:w-10/12 p-2">
+                                <p>{emailMessage}</p>
+                            </div>}
+                            <form ref={form} className="space-y-8" onSubmit={handleSubmit}>
                                 <div>
                                     <input
                                         required
