@@ -7,22 +7,22 @@ const projects = [
         "title": "Comentario",
         "description": "An online software feedback webapp with sentiment analysis.",
         "live": "#",
-        "gihub": "https://github.com/",
-        "src": "../src/assets/comentario.mp4"
+        "gihub": "https://github.com/iamgokull10/Comentario",
+        "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/comentario.mp4"
     },
     {
         "title": "Audiophile",
         "description": "An online shopping web app for audio enthusisasts.",
         "live": "#",
-        "gihub": "https://github.com/",
-        "src": "../src/assets/audiophile.mp4"
+        "gihub": "https://github.com/iamgokull10/Audiophile",
+        "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/audiophile.mp4"
     },
     {
         "title": "Resumes",
         "description": "An online Resume builder.",
         "live": "#",
-        "gihub": "https://github.com/",
-        "src": "../src/assets/resumes.mp4"
+        "gihub": "https://github.com/iamgokull10/CV-project",
+        "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/resumes.mp4"
     },
 ]
 
@@ -54,7 +54,7 @@ const Projects = () => {
                     </div>
                     <Link className="pt-4 flex items-center gap-2" to='/contact'>
                         <h6 className="text-sm leading-loose">Are you interested to contact me?</h6>
-                        <img src="../src/assets/right-arrow.png" className="h-6 w-6 animate-jumpInfinite"></img>
+                        <img src="https://ik.imagekit.io/dpkmzcpsk/Portfolio/right-arrow.png" className="h-6 w-6 animate-jumpInfinite"></img>
                     </Link>
                 </div>
             </section>

@@ -45,7 +45,7 @@ const About = () => {
           </div>
           <Link className="pt-8 flex items-center gap-2 " to='/projects'>
             <h6 className="text-sm leading-loose">Let's continue to the projects</h6>
-            <img src="../src/assets/right-arrow.png" className="h-6 w-6 animate-jumpInfinite"></img>
+            <img src="https://ik.imagekit.io/dpkmzcpsk/Portfolio/right-arrow.png" className="h-6 w-6 animate-jumpInfinite"></img>
           </Link>
         </div>
       </section>
