@@ -46,7 +46,7 @@ const Contact = () => {
                                         required
                                         minLength={5}
                                         type="text"
-                                        name="name"
+                                        name="user_name"
                                         id="name"
                                         placeholder="Enter your name"
                                         maxLength={32}
@@ -59,7 +59,7 @@ const Contact = () => {
                                     <input
                                         required
                                         type="email"
-                                        name="email"
+                                        name="user_email"
                                         id="email"
                                         placeholder="Enter your email address"
                                         maxLength={32}
@@ -71,7 +71,7 @@ const Contact = () => {
                                 <div>
                                     <textarea
                                         required
-                                        name="comment"
+                                        name="message"
                                         rows={4}
                                         minLength={10}
                                         id="comment"
