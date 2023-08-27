@@ -8,11 +8,11 @@ const Contact = () => {
     const [message, setMessage] = useState("");
     const [hideMessage, showEmailMessage] = useState(true);
     const [emailMessage, setEmailMessage] = useState("Email check");
-    const form = useRef();
+    const form = useRef<HTMLFormElement>(null);
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_bqg0g2o', 'template_s1vzvxh', form.current?.id || '', '-vuNXR0q1i9rrWoX6')
         .then(() => {
             showEmailMessage(false);
             setEmailMessage("Thanks for contacting us. We'll get back to you as soon as possible.")
@@ -40,7 +40,7 @@ const Contact = () => {
                             {hideMessage && <div className="bg-green-700 border border-green-800 inline-flex md:w-10/12 p-2">
                                 <p>{emailMessage}</p>
                             </div>}
-                            <form ref={form} className="space-y-8" onSubmit={handleSubmit}>
+                            <form ref={form} id="contact-form" className="space-y-8" onSubmit={handleSubmit}>
                                 <div>
                                     <input
                                         required
