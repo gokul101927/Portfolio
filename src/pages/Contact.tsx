@@ -7,12 +7,12 @@ const Contact = () => {
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
     const [hideMessage, showEmailMessage] = useState(true);
-    const [emailMessage, setEmailMessage] = useState("Email check");
+    const [emailMessage, setEmailMessage] = useState("");
     const form = useRef<HTMLFormElement>(null);
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        emailjs.sendForm('service_bqg0g2o', 'template_s1vzvxh', form.current?.id || '', '-vuNXR0q1i9rrWoX6')
+        emailjs.sendForm('service_bqg0g2o', 'template_s1vzvxh', form.current!, '-vuNXR0q1i9rrWoX6')
         .then(() => {
             showEmailMessage(false);
             setEmailMessage("Thanks for contacting us. We'll get back to you as soon as possible.")
@@ -37,7 +37,7 @@ const Contact = () => {
                             <h1>Get in touch or shoot me an email directly on 
                                 <a href="mailto:iamgokull10@gmail.com" className="font-bold"> iamgokull10@gmail.com</a>
                             </h1>
-                            {hideMessage && <div className="bg-green-700 border border-green-800 inline-flex md:w-10/12 p-2">
+                            {!hideMessage && <div className="bg-green-700 border border-green-800 inline-flex md:w-10/12 p-2">
                                 <p>{emailMessage}</p>
                             </div>}
                             <form ref={form} id="contact-form" className="space-y-8" onSubmit={handleSubmit}>
