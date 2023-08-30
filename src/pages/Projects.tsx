@@ -52,7 +52,7 @@ const Projects = () => {
                             })}
                         </div>
                     </div>
-                    <Link className="pt-4 flex items-center gap-2" to='/contact'>
+                    <Link className="pt-4 inline-flex items-center gap-2 hover:scale-1.5" to='/contact'>
                         <h6 className="text-sm leading-loose">Are you interested to contact me?</h6>
                         <img src="https://ik.imagekit.io/dpkmzcpsk/Portfolio/right-arrow.png" className="h-6 w-6 animate-jumpInfinite"></img>
                     </Link>

@@ -27,14 +27,12 @@ const Home = () => {
                             </p>
                         </div>
                         <div>
-                            <Link className="pt-4 flex inline items-center gap-2 hover:scale-1.5" to='/about'>
+                            <Link className="pt-4 inline-flex items-center gap-2" to='/about'>
                                 <h6 className="text-sm leading-loose">See more about me</h6>
                                 <img src="https://ik.imagekit.io/dpkmzcpsk/Portfolio/right-arrow.png" className="h-6 w-6 animate-jumpInfinite"></img>
                             </Link>
                         </div>
-
                     </div>
-
                 </div>
             </motion.div>
         </section>

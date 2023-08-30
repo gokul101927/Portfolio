@@ -23,18 +23,18 @@ const Header = () => {
                 <div id='logo'>
                     <Link to='/' className='text-6xl drop-shadow-lg font-dancingScript'>
                        G
-                    </Link>
+                    </Link> 
                 </div>
                 <div id='nav-items' className='hidden md:flex gap-8 text-sm'>
-                    <NavLink to='/about' className="relative px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
+                    <Link to='/about' className="relative px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
                         About
-                    </NavLink>
-                    <NavLink to='/projects' className="relative px-2 after:content-['']  after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
+                    </Link>
+                    <Link to='/projects' className="relative px-2 after:content-['']  after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
                         Projects
-                    </NavLink>
-                    <NavLink to='/contact' className="relative px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
+                    </Link>
+                    <Link to='/contact' className="relative px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
                         Contact
-                    </NavLink>
+                    </Link>
                 </div>
                 <div className='md:hidden' >
                     <div className={`${isHeaderClicked ? 'hidden' : 'block'} space-y-2 relative`} onClick={openNavBar}>
