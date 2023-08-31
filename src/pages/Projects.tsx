@@ -7,21 +7,21 @@ const projects = [
         "title": "Comentario",
         "description": "An online software feedback webapp with sentiment analysis.",
         "live": "#",
-        "gihub": "https://github.com/iamgokull10/Comentario",
+        "gihub": "https://github.com/iam-gokull/Comentario",
         "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/comentario.mp4"
     },
     {
         "title": "Audiophile",
         "description": "An online shopping web app for audio enthusisasts.",
         "live": "#",
-        "gihub": "https://github.com/iamgokull10/Audiophile",
+        "gihub": "https://github.com/iam-gokull/Audiophile",
         "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/audiophile.mp4"
     },
     {
         "title": "Resumes",
         "description": "An online Resume builder.",
         "live": "#",
-        "gihub": "https://github.com/iamgokull10/CV-project",
+        "gihub": "https://github.com/iam-gokull/CV-project",
         "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/resumes.mp4"
     },
 ]
