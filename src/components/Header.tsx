@@ -1,10 +1,13 @@
-import { Link, NavLink } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { motion } from "framer-motion"
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+
 
 const Header = () => {
 
     const [isHeaderClicked, setIsHeaderClicked] = useState(false);
+
+    const location = useLocation() 
 
     const openNavBar = () => {
         setIsHeaderClicked(true);
@@ -13,6 +16,10 @@ const Header = () => {
     const closeNavBar = () => {
         setIsHeaderClicked(false);
     }
+
+    useEffect(() => {
+        console.log(location.pathname)
+    })
 
     return (
         <motion.div
@@ -26,13 +33,13 @@ const Header = () => {
                     </Link> 
                 </div>
                 <div id='nav-items' className='hidden md:flex gap-8 text-sm'>
-                    <Link to='/about' className="relative px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
+                    <Link to='/about' className={`${location.pathname === "/about" ? "after:w-full" : "after:w-0"} relative px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full`}>
                         About
                     </Link>
-                    <Link to='/projects' className="relative px-2 after:content-['']  after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
+                    <Link to='/projects' className={`${location.pathname === "/projects" ? "after:w-full" : "after:w-0"} relative px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full`}>
                         Projects
                     </Link>
-                    <Link to='/contact' className="relative px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
+                    <Link to='/contact' className={`${location.pathname === "/contact" ? "after:w-full" : "after:w-0"} relative px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full`}>
                         Contact
                     </Link>
                 </div>
@@ -51,15 +58,15 @@ const Header = () => {
                             >&times;</div>
                         </div>
                         <div className='flex flex-col justify-start pt-20 gap-8 items-center'>
-                            <NavLink to='/about' onClick={closeNavBar} className="relative font-bold px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
+                            <Link to='/about' onClick={closeNavBar} className={`${location.pathname === "/about" ? "after:w-full" : "after:w-0"} relative font-bold px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full`}>
                                 About
-                            </NavLink>
-                            <NavLink to='/projects' onClick={closeNavBar} className="relative font-bold  px-2 after:content-['']  after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
+                            </Link>
+                            <Link to='/projects' onClick={closeNavBar} className={`${location.pathname === "/projecrs" ? "after:w-full" : "after:w-0"} relative font-bold px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full`}>
                                 Projects
-                            </NavLink>
-                            <NavLink to='/contact' onClick={closeNavBar} className="relative font-bold  px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full">
+                            </Link>
+                            <Link to='/contact' onClick={closeNavBar} className={`${location.pathname === "/contact" ? "after:w-full" : "after:w-0"} relative font-bold px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full`}>
                                 Contact
-                            </NavLink>
+                            </Link>
                         </div>
 
                     </div>

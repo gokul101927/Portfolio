@@ -22,7 +22,7 @@ const skills = [
 
 const Skill: React.FC<SkillProps> = ({ name, icon }) => {
   return (
-    <div className='flex flex-col border border-dotted border-divider items-center flex-shrink-0 relative mr-4 gap-2 py-4 relative w-28'>
+    <div className={`${name === 'react' ? 'ml-4' : ''} flex flex-col border border-dotted border-divider items-center flex-shrink-0 relative mr-4 gap-2 py-4 relative w-28`}>
       <i className={`${icon} colored text-5xl text-center`}></i>
       <p className='mt-1 text-xs text-center uppercase'>{name}</p>
     </div>
