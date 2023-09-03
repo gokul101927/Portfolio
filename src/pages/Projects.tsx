@@ -21,7 +21,7 @@ const projects = [
         "title": "Resumes",
         "description": "An online Resume builder.",
         "live": "#",
-        "gihub": "https://github.com/iam-gokull/CV-project",
+        "gihub": "https://github.com/iam-gokull/Resumes",
         "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/resumes.mp4"
     },
 ]
