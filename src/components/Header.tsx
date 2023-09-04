@@ -61,7 +61,7 @@ const Header = () => {
                             <Link to='/about' onClick={closeNavBar} className={`${location.pathname === "/about" ? "after:w-full" : "after:w-0"} relative font-bold px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full`}>
                                 About
                             </Link>
-                            <Link to='/projects' onClick={closeNavBar} className={`${location.pathname === "/projecrs" ? "after:w-full" : "after:w-0"} relative font-bold px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full`}>
+                            <Link to='/projects' onClick={closeNavBar} className={`${location.pathname === "/projects" ? "after:w-full" : "after:w-0"} relative font-bold px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full`}>
                                 Projects
                             </Link>
                             <Link to='/contact' onClick={closeNavBar} className={`${location.pathname === "/contact" ? "after:w-full" : "after:w-0"} relative font-bold px-2 after:content-[''] after:mt-1 after:absolute after:left-0 after:top-full after:w-0 after:h-0.5 after:bg-white after:ease-out after:transition-all after:hover:w-full`}>
