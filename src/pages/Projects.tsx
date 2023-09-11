@@ -8,21 +8,24 @@ const projects = [
         "description": "An online software feedback webapp with sentiment analysis.",
         "live": "#",
         "gihub": "https://github.com/iam-gokull/Comentario",
-        "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/comentario.mp4"
+        "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/comentario.mp4",
+        "poster": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/Comentario-poster.jpg",
     },
     {
         "title": "Audiophile",
         "description": "An online shopping web app for audio enthusisasts.",
         "live": "#",
         "gihub": "https://github.com/iam-gokull/Audiophile",
-        "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/audiophile.mp4"
+        "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/audiophile.mp4",
+        "poster": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/Audiophile-poster.jpg",
     },
     {
         "title": "Resumes",
         "description": "An online Resume builder.",
         "live": "#",
         "gihub": "https://github.com/iam-gokull/Resumes",
-        "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/resumes.mp4"
+        "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/resumes.mp4",
+        "poster": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/Resumes-poster.jpg",
     },
 ]
 
@@ -47,7 +50,7 @@ const Projects = () => {
                                         transition={{ ease: "easeIn", duration: 1 }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: false }}>
-                                        <ProjectContainer title={project.title} description={project.description} live={project.live} github={project.gihub} src={project.src} />
+                                        <ProjectContainer title={project.title} description={project.description} live={project.live} github={project.gihub} src={project.src} poster={project.poster}/>
                                     </motion.div>)
                             })}
                         </div>

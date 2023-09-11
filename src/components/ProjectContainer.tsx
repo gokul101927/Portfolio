@@ -6,13 +6,14 @@ interface Props {
   live: string;
   github: string;
   src: string;
+  poster: string;
 }
 
-const ProjectContainer: React.FC<Props> = ({ title, description, github, src }) => {
+const ProjectContainer: React.FC<Props> = ({ title, description, github, src, poster }) => {
   return (
 
     <div className="group z-40 rounded-md relative object-cover w-[350px] h-[350px] md:w-[450px] md:h-[400px] bg-center bg-no-repeat overflow-hidden p-4 flex items-end transition-transform transform-gpu xl:hover:scale-105">
-      <video autoPlay loop playsInline muted
+      <video autoPlay loop playsInline muted poster={poster} preload="none"
        className="absolute object-cover w-full h-full left-0 top-0 transition-blur duration-300 ease-in-out opacity-50 xl:opacity-70 xl:group-hover:blur-md xl:group-hover:opacity-50">
         <source src={src} type="video/mp4"/>
       </video>
