@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const projects = [
     {
         "title": "Comentario",
-        "description": "An online software feedback webapp with sentiment analysis.",
+        "description": "an innovative full-stack software feedback web application with sentiment analysis.",
         "live": "#",
         "gihub": "https://github.com/iam-gokull/Comentario",
         "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/comentario.mp4",
@@ -14,7 +14,7 @@ const projects = [
     },
     {
         "title": "Audiophile",
-        "description": "An online shopping web app for audio enthusisasts.",
+        "description": "a full-stack e-commerce web application tailored for audio enthusiasts.",
         "live": "#",
         "gihub": "https://github.com/iam-gokull/Audiophile",
         "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/audiophile.mp4",

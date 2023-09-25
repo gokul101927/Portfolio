@@ -42,4 +42,4 @@ const ProjectContainer: React.FC<Props> = ({ title, description, github, src, te
         );
 };
 
-        export default ProjectContainer;
+export default ProjectContainer;
