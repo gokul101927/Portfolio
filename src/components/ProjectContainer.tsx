@@ -32,9 +32,9 @@ const ProjectContainer: React.FC<Props> = ({ title, description, github, src, te
                         })}
             </div>
             <div className="flex gap-4">
-              <Link to={github} className="flex items-center gap-2 rounded-full bg-blue-700 px-4 py-1 text-white text-xs font-bold">
+              <Link to={github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 rounded-full bg-blue-700 px-4 py-1 text-white text-xs font-bold">
                 Github
-                <img src="https://ik.imagekit.io/dpkmzcpsk/Portfolio/right-arrow.png" className="h-6 w-6"></img>
+                <img src="https://ik.imagekit.io/dpkmzcpsk/Portfolio/new-tab.png" className="h-6 w-6"></img>
               </Link>
             </div>
           </div>
