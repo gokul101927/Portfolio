@@ -21,7 +21,7 @@ const ProjectContainer: React.FC<Props> = ({ title, description, github, src, te
 
           <div className="z-50 transition-opacity opacity-100 xl:opacity-0 xl:group-hover:opacity-100 lg:pb-16 space-y-2">
             <h1 className="inline font-bold uppercase text-xl text-white">{title}</h1>
-            <p className="text-white">{description}</p>
+            <p className="text-white text-sm">{description}</p>
             <div className="flex flex-wrap gap-1">
             {techStack.map((techStack, index) => {
                             return (
