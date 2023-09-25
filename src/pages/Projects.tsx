@@ -9,6 +9,7 @@ const projects = [
         "live": "#",
         "gihub": "https://github.com/iam-gokull/Comentario",
         "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/comentario.mp4",
+        "techStack": ["Java", "TypeScript", "Spring Boot", "ReactJs", "MongoDB", "TailwindCSS"],
         "poster": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/Comentario-poster.jpg",
     },
     {
@@ -17,6 +18,7 @@ const projects = [
         "live": "#",
         "gihub": "https://github.com/iam-gokull/Audiophile",
         "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/audiophile.mp4",
+        "techStack": ["Java", "JavaScript", "Spring Boot", "ReactJs", "MongoDB"],
         "poster": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/Audiophile-poster.jpg",
     },
     {
@@ -25,6 +27,7 @@ const projects = [
         "live": "#",
         "gihub": "https://github.com/iam-gokull/Resumes",
         "src": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/resumes.mp4",
+        "techStack": ["JavaScript", "ReactJs"],
         "poster": "https://ik.imagekit.io/dpkmzcpsk/Portfolio/Resumes-poster.jpg",
     },
 ]
@@ -50,7 +53,7 @@ const Projects = () => {
                                         transition={{ ease: "easeIn", duration: 1 }}
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: false }}>
-                                        <ProjectContainer title={project.title} description={project.description} live={project.live} github={project.gihub} src={project.src} poster={project.poster}/>
+                                        <ProjectContainer title={project.title} description={project.description} live={project.live} github={project.gihub} src={project.src} techStack={project.techStack} poster={project.poster}/>
                                     </motion.div>)
                             })}
                         </div>
