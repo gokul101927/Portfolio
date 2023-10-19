@@ -23,7 +23,7 @@ const Home = () => {
                                 I'm now poised to contribute uniquely innovative solutions to the tech landscape. 
                             </p>
                             <p className="text-sm leading-loose">
-                                <Link to='/contact' className="underline underline-offset-4">Come along with me</Link> as I take on new challenges, strive for improvement, and forge a route to a dynamic career of development.
+                                Come along with <Link to='/contact' className="underline underline-offset-4">me</Link> as I take on new challenges, strive for improvement, and forge a route to a dynamic career of development.
                             </p>
                         </div>
                         <div>
