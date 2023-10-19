@@ -9,7 +9,7 @@ const about = [
   },
   {
     "title": "Education's Canvas, Development's Palette",
-    "description": "As I pursued my education in computer science, I concurrently ventured into the captivating realm of software development. Nurturing an array of skills, showcased elegantly below, I've forged a path that marries the precision of a software tester with the ingenuity of an aspiring full-stack developer.",
+    "description": "As I pursued my education in computer science, I concurrently ventured into the captivating realm of software development. Nurturing an array of skills, showcased elegantly below, I've forged a path that marries the precision of a software tester with the ingenuity of an aspiring software developer.",
     "skills": true,
   },
   {
@@ -18,7 +18,7 @@ const about = [
   },
   {
     "title": "Code Crafting: Bridging Testing and Development",
-    "description": "Today, as I stand at the crossroads of my journey, I carry with me a trove of skills that continue to evolve, propelling me towards an exciting future where I'm poised to make a mark in both testing and development.",
+    "description": "Now, having successfully completed my transition, I stand at the crossroads of my journey with a refined set of skills that continue to evlove, propelling me towards an exciting future where I'm determined to make a mark in development.",
   }
 ]
 
